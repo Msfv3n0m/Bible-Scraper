@@ -11,17 +11,25 @@ import requests
 
 chapter = 1
 version = "NIV"
+book = ""
 
 #
 # Main
 #
 
 print("Which book of the Bible would you like headings for?")
-book = input("Please type the full name of the book: ").capitalize().strip()
+book_list = input("Please type the full name of the book: ").capitalize().strip().split()
+
+if len(book_list) == 2:
+    book = book_list[0] + " " + book_list[1].capitalize()
+else:
+    book = book_list[0].capitalize()
+
 done = False
 while (done == False):
     next_chapter = chapter+1
-    url = "https://www.biblegateway.com/passage/?search=" + book + "%20" + str(chapter) + "&version=" + version
+    url = "https://www.biblegateway.com/passage/?search=" + book + " " + str(chapter) + "&version=" + version
+    print(url)
     html = requests.get(url)
     soup = BeautifulSoup(html.text,'html.parser')
 
