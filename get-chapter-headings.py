@@ -26,5 +26,5 @@ print("--------------------------------------------------------------------")
 print(book + " " + str(chapter) + ":")
 for x in soup.findAll("h3"):
     for y in x.findAll('span'):
-        print(y.get_text())
+        print("\t" + y.get_text())
 print("--------------------------------------------------------------------")
