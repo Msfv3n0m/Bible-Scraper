@@ -6,6 +6,6 @@ I have always had a hard time coordinating what happens in a chapter of a book i
 2. Install the required python modules </br>
 `pip install -r requirements.txt` </br> 
 ## Usage
-
+![](https://github.com/Msfv3n0m/Bible-Scraper/blob/main/usage.PNG)
 ## Issues
 - some headings will return with 1-2 letters encapsulated by parentheses appended at the end
