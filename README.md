@@ -6,7 +6,7 @@ I have always had a hard time remembering the reference for the events found in 
 2. Install the required python modules </br>
 `pip install -r requirements.txt` </br> 
 ## Usage
-![](https://github.com/Msfv3n0m/Bible-Scraper/blob/main/usage1.PNG)
+![](https://github.com/Msfv3n0m/Bible-Scraper/blob/main/usage1.PNG) </br>
 The current translation is in NIV, but that can be easily changed by editing the version variable in the script to be whatever version you prefer
 ## Issues
 - some headings will return with 1-2 letters encapsulated by parentheses appended at the end
