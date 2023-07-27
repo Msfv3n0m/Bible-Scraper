@@ -29,7 +29,6 @@ done = False
 while (done == False):
     next_chapter = chapter+1
     url = "https://www.biblegateway.com/passage/?search=" + book + " " + str(chapter) + "&version=" + version
-    print(url)
     html = requests.get(url)
     soup = BeautifulSoup(html.text,'html.parser')
 
